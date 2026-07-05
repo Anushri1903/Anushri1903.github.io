@@ -190,8 +190,8 @@
             border: none;
             font-size: 1rem;
             box-shadow:
-                0 10px 0 rgba(130, 96, 27, 0.32),
-                0 14px 28px rgba(67, 49, 14, 0.16);
+                0 2px 8px rgba(130, 96, 27, 0.2),
+                0 4px 12px rgba(67, 49, 14, 0.1);
             transform: translateY(0);
         }
 
@@ -201,18 +201,18 @@
         }
 
         .btn-primary:hover {
-            transform: translateY(-3px);
+            transform: translateY(-1px);
             box-shadow:
-                0 13px 0 rgba(130, 96, 27, 0.28),
-                0 18px 32px rgba(67, 49, 14, 0.18);
+                0 4px 12px rgba(130, 96, 27, 0.22),
+                0 8px 16px rgba(67, 49, 14, 0.14);
             background-color: #e2b14f;
         }
 
         .btn:active {
-            transform: translateY(4px);
+            transform: translateY(0px);
             box-shadow:
-                0 4px 0 rgba(130, 96, 27, 0.28),
-                0 8px 16px rgba(67, 49, 14, 0.14);
+                0 1px 4px rgba(130, 96, 27, 0.15),
+                0 2px 6px rgba(67, 49, 14, 0.08);
         }
 
         .btn-secondary {
@@ -225,8 +225,9 @@
             background-color: #e2b14f;
             color: #173f2c;
             box-shadow:
-                0 13px 0 rgba(130, 96, 27, 0.28),
-                0 18px 32px rgba(67, 49, 14, 0.18);
+                0 4px 12px rgba(130, 96, 27, 0.22),
+                0 8px 16px rgba(67, 49, 14, 0.14);
+            transform: translateY(-1px);
         }
 
         /* About Section */
@@ -444,6 +445,27 @@
             border-radius: 999px;
         }
 
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.8rem;
+            color: var(--primary-dark);
+            background: rgba(216, 162, 61, 0.15);
+            border: 1px solid rgba(216, 162, 61, 0.35);
+            padding: 0.35rem 0.7rem;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .project-link:hover {
+            background: rgba(216, 162, 61, 0.25);
+            border-color: rgba(216, 162, 61, 0.5);
+            color: var(--accent-color);
+        }
+
         /* Lightbox */
         .lightbox {
             position: fixed;
@@ -544,6 +566,87 @@
             transform: translateY(-2px);
         }
 
+        /* Articles & Posts Section */
+        .articles {
+            padding: 4rem 0;
+            background: linear-gradient(180deg, #fffaf4 0%, #f5efe5 100%);
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .article-card {
+            background: rgba(255, 255, 255, 0.94);
+            padding: 2rem;
+            border-radius: 0.8rem;
+            border-left: 4px solid var(--primary-dark);
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(31, 93, 69, 0.08);
+        }
+
+        .article-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 28px rgba(31, 93, 69, 0.12);
+        }
+
+        .article-header {
+            margin-bottom: 1rem;
+        }
+
+        .article-header h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-dark);
+        }
+
+        .article-header a {
+            color: var(--primary-dark);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .article-header a:hover {
+            color: var(--accent-color);
+        }
+
+        .article-date {
+            display: inline-block;
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        .article-description {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .article-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .article-tag {
+            font-size: 0.8rem;
+            color: var(--primary-dark);
+            background: rgba(104, 194, 166, 0.1);
+            border: 1px solid rgba(104, 194, 166, 0.25);
+            padding: 0.3rem 0.7rem;
+            border-radius: 999px;
+            transition: all 0.3s ease;
+        }
+
+        .article-tag:hover {
+            background: rgba(104, 194, 166, 0.2);
+            border-color: rgba(104, 194, 166, 0.4);
+        }
+
         /* Contact Section */
         .contact {
             padding: 4rem 0;
@@ -585,17 +688,17 @@
 
         .contact-link:hover {
             background-color: #e2b14f;
-            transform: translateY(-3px);
+            transform: translateY(-1px);
             box-shadow:
-                0 13px 0 rgba(130, 96, 27, 0.28),
-                0 18px 32px rgba(67, 49, 14, 0.18);
+                0 4px 12px rgba(130, 96, 27, 0.22),
+                0 8px 16px rgba(67, 49, 14, 0.14);
         }
 
         .contact-link:active {
-            transform: translateY(4px);
+            transform: translateY(0px);
             box-shadow:
-                0 4px 0 rgba(130, 96, 27, 0.28),
-                0 8px 16px rgba(67, 49, 14, 0.14);
+                0 1px 4px rgba(130, 96, 27, 0.15),
+                0 2px 6px rgba(67, 49, 14, 0.08);
         }
 
         /* Footer */
@@ -672,13 +775,14 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-content">
-                <div class="logo"></div>
+                <div class="logo">Anushri More</div>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
+                    <li><a href="#articles">Articles</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -705,9 +809,9 @@
         <div class="container">
             <h2>About Me</h2>
             <div class="about-content">
-                <p>I'm a Vice President in Model Risk / Financial Crime Analytics at Citi. My work centers on model validation, performance evaluation, and risk assessment, ensuring the models behind critical financial decisions are robust, explainable, and hold up to regulatory and business scrutiny.</p>
+                <p>I'm a data scientist with a real enthusiasm for optimization, currently working as Vice President in the Data Science and Model Management team at Citi Bank. My work centers on model validation, performance evaluation, and risk assessment, making sure the models behind critical financial decisions are robust, explainable, and hold up to regulatory and business scrutiny.</p>
                 <p>I work daily with large, complex datasets, using Python, SQL, and statistical techniques to translate model behavior into insights stakeholders can act on with confidence.</p>
-                <p>What I'm most interested in is the combination of predictive and prescriptive modeling — not just forecasting what's likely to happen, but using that insight to guide the best course of action. That intersection, applied to financial analytics, is where I'd like to keep growing.</p>
+                <p>What I'm most drawn to is the intersection of predictive and prescriptive modeling — not just forecasting what's likely to happen, but using that insight to guide the best course of action. That intersection, applied to financial analytics, is where I'd like to keep growing.</p>
                 <p>Take a look around — you'll find some of my past projects, along with what I'm currently exploring.</p>
                 <div class="about-highlights">
                     <div class="highlight">
@@ -762,6 +866,21 @@
                     <li>Communicated complex quantitative results to technical and non-technical stakeholders within regulated governance frameworks</li>
                 </ul>
             </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Associate Data Scientist</h3>
+                    <span class="date">Oct 2019 - Jul 2021 · 1 yr 10 mos</span>
+                </div>
+                <p class="company"><a href="https://www.linkedin.com/company/22343968/" target="_blank" style="color: var(--primary-dark); text-decoration: none;">Aera Technology</a> | Pune/Pimpri-Chinchwad Area</p>
+                <ul class="experience-details">
+                    <li>Contributed to Trade Promotion Optimization (TPO) projects for Fortune 500 clients, applying Mixed Integer Programming (MIP) with Gurobi to optimize promotion allocation and scheduling</li>
+                    <li>Conducted predictive modeling and scenario analysis (demand forecasting, uplift modeling, and simulation) to inform promotional and inventory decisions</li>
+                    <li>Prepared and analyzed large-scale client datasets, performing data preprocessing, feature analysis, and validation to feed optimization and predictive workflows</li>
+                    <li>Translated business requirements into quantitative analyses, generating actionable insights that informed trade promotion strategies and ROI improvements</li>
+                    <li>Collaborated across product lifecycle phases (analysis, testing, version control, deployment, documentation, and support) in Agile teams, communicating results to technical and business stakeholders</li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -772,7 +891,7 @@
             <div class="projects-grid">
                 <article class="project-card" data-lightbox="credit-fraud">
                     <div class="project-image-wrap">
-                        <img src="images/credit_fraud.png" alt="Credit fraud project preview">
+                        <img src="images/credit_fraud.png" alt="Credit Risk & Fraud Detection: Statistical analysis of fraudulent behavior patterns in financial datasets">
                         <div class="project-image-overlay">
                             <span class="project-badge">Click to preview</span>
                         </div>
@@ -784,13 +903,14 @@
                             <span class="project-pill">Python</span>
                             <span class="project-pill">Risk Modeling</span>
                             <span class="project-pill">Validation</span>
+                            <a href="https://github.com/Anushri1903/Fraud_Detection" target="_blank" class="project-link">🔗 View Code</a>
                         </div>
                     </div>
                 </article>
 
                 <article class="project-card" data-lightbox="telecom">
                     <div class="project-image-wrap">
-                        <img src="images/tele.png" alt="Telecom project preview">
+                        <img src="images/tele.png" alt="Customer Churn Analysis: Segmentation study on telecom customer behavior and retention patterns">
                         <div class="project-image-overlay">
                             <span class="project-badge">Click to preview</span>
                         </div>
@@ -801,32 +921,15 @@
                         <div class="project-meta">
                             <span class="project-pill">SQL</span>
                             <span class="project-pill">Segmentation</span>
+                            <a href="https://github.com/Anushri1903/Telemarketing" target="_blank" class="project-link">🔗 View Code</a>
                             <span class="project-pill">Analytics</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card" data-lightbox="covid">
-                    <div class="project-image-wrap">
-                        <img src="images/Covid.png" alt="Covid project preview">
-                        <div class="project-image-overlay">
-                            <span class="project-badge">Click to preview</span>
-                        </div>
-                    </div>
-                    <div class="project-body">
-                        <h3>COVID Data Monitoring</h3>
-                        <p>Trend analysis and visual storytelling across time-series health data to surface important shifts quickly.</p>
-                        <div class="project-meta">
-                            <span class="project-pill">Dashboards</span>
-                            <span class="project-pill">Time Series</span>
-                            <span class="project-pill">Insights</span>
                         </div>
                     </div>
                 </article>
 
                 <article class="project-card" data-lightbox="vendor">
                     <div class="project-image-wrap">
-                        <img src="images/vend.png" alt="Vendor analytics project preview">
+                        <img src="images/vend.png" alt="Vendor Operations Analytics: Operational efficiency analysis and process optimization reporting dashboard">
                         <div class="project-image-overlay">
                             <span class="project-badge">Click to preview</span>
                         </div>
@@ -837,6 +940,7 @@
                         <div class="project-meta">
                             <span class="project-pill">Operations</span>
                             <span class="project-pill">Optimization</span>
+                            <a href="https://github.com/Anushri1903/Optimisation-" target="_blank" class="project-link">🔗 View Code</a>
                             <span class="project-pill">Reporting</span>
                         </div>
                     </div>
@@ -890,6 +994,41 @@
         </div>
     </section>
 
+    <!-- Articles & Posts Section -->
+    <section id="articles" class="articles">
+        <div class="container">
+            <h2>Articles & Posts</h2>
+            <div class="articles-grid">
+                <!-- TEMPLATE: Copy this block to add new articles
+                <article class="article-card">
+                    <div class="article-header">
+                        <h3><a href="YOUR_LINK" target="_blank">Article Title Here</a></h3>
+                        <span class="article-date">Month Year</span>
+                    </div>
+                    <p class="article-description">Brief description of your article or key takeaway.</p>
+                    <div class="article-tags">
+                        <span class="article-tag">Tag1</span>
+                        <span class="article-tag">Tag2</span>
+                    </div>
+                </article>
+                -->
+
+                <!-- EXAMPLE (Remove this once you add real articles) -->
+                <article class="article-card">
+                    <div class="article-header">
+                        <h3><a href="https://medium.com" target="_blank">Coming Soon</a></h3>
+                        <span class="article-date">Your articles will appear here</span>
+                    </div>
+                    <p class="article-description">Share your insights on data science, machine learning, optimization, and financial analytics.</p>
+                    <div class="article-tags">
+                        <span class="article-tag">Data Science</span>
+                        <span class="article-tag">Optimization</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -913,7 +1052,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Anushri More. All rights reserved.</p>
+            <p>&copy; 2026 Anushri More. All rights reserved.</p>
         </div>
     </footer>
 
@@ -983,11 +1122,6 @@
                 src: 'images/tele.png',
                 title: 'Customer Churn / Segmentation Analysis',
                 description: 'Preview of the customer segmentation and churn analysis project.'
-            },
-            'covid': {
-                src: 'images/Covid.png',
-                title: 'COVID Data Monitoring',
-                description: 'Preview of the COVID trend analysis project.'
             },
             'vendor': {
                 src: 'images/vend.png',
